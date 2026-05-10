@@ -2,30 +2,70 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Home | My Site">
-  <div class="mx-auto text-center flex flex-col space-x-3">
-    <!-- This wraps everything into one centered box -->
-    <h1 class="text-4xl font-bold mb-4">Stuns</h1>
-    <p class="text-lg text-slate-600 dark:text-zinc-400 mb-8">
-      Available now on the App Store
-    </p>
-
-    <p>
-      KEY FEATURES: Today at a Glance: A streamlined dashboard showing your most
-      important metrics right now. No noise, just the essentials. Monthly Deep
-      Dives: Go beyond the daily grind. View your progress over the last 30 days
-      with high-performance interactive charts. Trend Analysis: The ultimate
-      "reality check." Automatically compare this month's data against the
-      previous month to see if you’re actually improving or need to adjust your
-      training load.
-    </p>
-
-    <div class="flex flex-col space-x-3 mt-6">
-      <a href="stuns/privacy-policy" class="hover:underline text-blue-400"
-        >Privacy Policy</a
+<MainLayout title="Stuns | Nordic Health Tracking">
+  <div class="max-auto max-w-2xl px-6 py-20 text-center">
+    <!-- Hero Section -->
+    <header class="mb-16">
+      <h1
+        class="text-6xl font-black tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-b from-slate-900 to-slate-600 dark:from-white dark:to-zinc-500"
       >
+        Stuns
+      </h1>
+      <p class="text-xl text-slate-600 dark:text-zinc-400 font-medium">
+        Available now on the App Store
+      </p>
+    </header>
 
-      <a href="stuns/support" class="hover:underline text-blue-400">Contact</a>
+    <!-- Feature Grid -->
+    <div class="grid gap-6 text-left mb-16">
+      <div
+        class="p-6 rounded-2xl bg-slate-50 dark:bg-zinc-900 border border-slate-100 dark:border-zinc-800"
+      >
+        <h3 class="font-bold text-lg mb-2">Today at a Glance</h3>
+        <p class="text-slate-600 dark:text-zinc-400 leading-relaxed">
+          A streamlined dashboard showing your most important metrics right now.
+          No noise, just the essentials.
+        </p>
+      </div>
+
+      <div
+        class="p-6 rounded-2xl bg-slate-50 dark:bg-zinc-900 border border-slate-100 dark:border-zinc-800"
+      >
+        <h3 class="font-bold text-lg mb-2">Monthly Deep Dives</h3>
+        <p class="text-slate-600 dark:text-zinc-400 leading-relaxed">
+          Go beyond the daily grind. View your progress over the last 30 days
+          with high-performance interactive charts.
+        </p>
+      </div>
+
+      <div
+        class="p-6 rounded-2xl bg-slate-50 dark:bg-zinc-900 border border-slate-100 dark:border-zinc-800"
+      >
+        <h3 class="font-bold text-lg mb-2">Trend Analysis</h3>
+        <p class="text-slate-600 dark:text-zinc-400 leading-relaxed">
+          The ultimate "reality check." Automatically compare data against the
+          previous month to see your actual improvement.
+        </p>
+      </div>
     </div>
+
+    <!-- Footer Links -->
+    <footer
+      class="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8 border-t border-slate-100 dark:border-zinc-800"
+    >
+      <a
+        href="/Stuns/privacy-policy"
+        class="text-sm font-medium text-slate-500 hover:text-blue-500 transition-colors"
+      >
+        Privacy Policy
+      </a>
+      <span class="hidden sm:block text-slate-300 dark:text-zinc-700">•</span>
+      <a
+        href="/Stuns/support"
+        class="text-sm font-medium text-slate-500 hover:text-blue-500 transition-colors"
+      >
+        Support & Contact
+      </a>
+    </footer>
   </div>
 </MainLayout>
