@@ -1,0 +1,30 @@
+---
+// src/layouts/MainLayout.astro
+import "../styles/global.css";
+const { title = "My Portfolio" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+  </head>
+  <body
+    class="bg-white text-slate-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased"
+  >
+    <div class="max-w-3xl mx-auto px-6 flex flex-col items-center">
+      <main
+        class="flex flex-col items-center text-center animate-in fade-in slide-in-from-bottom-2 duration-500 mt-5"
+      >
+        <slot />
+      </main>
+
+      <footer
+        class="mt-20 py-8 border-t border-slate-100 dark:border-zinc-800 text-center text-sm text-slate-500"
+      >
+        &copy; {new Date().getFullYear()} — Albin Sander
+      </footer>
+    </div>
+  </body>
+</html>
