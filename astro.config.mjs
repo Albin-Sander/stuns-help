@@ -5,8 +5,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://github.com/Albin-Sander/stuns-help",
-  base: "/stuns-help",
+  site: "https://github.com/Albin-Sander/stuns",
+  base: "/stuns",
   vite: {
     plugins: [tailwindcss()],
   },
